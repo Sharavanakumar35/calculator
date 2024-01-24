@@ -49,6 +49,7 @@ let expression = '';
   // Handle keyboard events
   document.addEventListener('keydown', function (event) {
     const key = event.key;
+    console.log(key);
     let expressionWithoutSpaces = expression.replace(/\s/g, '');
 
 
