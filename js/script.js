@@ -31,12 +31,19 @@ let expression = '';
   }
 
   function signChange() {
-    expression = '-' + expression;
+    let expressionWithoutSpaces = expression.trim();
+
+    if (expressionWithoutSpaces.slice(0, 1) !== '-') {
+        expression = '-' + expression;
+    } else {
+        expression = expression.slice(1);
+    }
+    
     updateDisplay();
   }
 
   function updateDisplay() {
-    document.getElementById('display').value = expression;
+    document.getElementById('result').value = expression;
   }
 
   // Handle keyboard events
