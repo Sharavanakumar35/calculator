@@ -6,7 +6,11 @@ let expression = '';
   }
 
   function performOperation(operator) {
-    expression += ' ' + operator + ' ';
+    let expNoSpace = expression.trim();
+    console.log(expNoSpace.slice(-1));
+    if (!['+', '-', '*', '-', '%'].includes(expNoSpace.slice(-1))) {
+      expression += ' ' + operator + ' ';
+    }
     updateDisplay();
   }
 
