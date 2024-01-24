@@ -10,6 +10,11 @@ body {
     height: 100vh;
     background-color: #f8f9fa;
   }
+
+  #title {
+    text-align: center;
+    font-family: 'digital-7';
+  }
   .calculator {
     width: 300px;
     padding: 20px;
