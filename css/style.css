@@ -22,7 +22,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #6b2b2b;
     width: 300px;
-    text-align: justify
+    text-align: left;
   }
   .calculator {
     width: 300px;

@@ -50,7 +50,7 @@ let expression = '';
   document.addEventListener('keydown', function (event) {
     const key = event.key;
     console.log(key);
-    let expressionWithoutSpaces = expression.replace(/\s/g, '');
+    let expressionWithoutSpaces = expression.trim();
 
 
     if (key >= '0' && key <= '9') {
